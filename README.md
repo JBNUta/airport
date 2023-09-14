@@ -6,7 +6,7 @@
       3) 스크래핑 과정을 함수로 수정 필요
       4) 스크래핑 결과 엑셀 파일 예시로 몇개 업로드 필요
       5) 중첩 for문 수정 필요\
-         e-1) 병렬 처리를 통해 살짝이나마 실행 시간을 줄였지만 더 다듬어져야 함.
+         e-1) 살짝이나마 실행 시간을 줄였지만 아직 미해결
 - 남은 과제
   - google scholar에서 관련 논문 서치
   - [airportal](https://www.airportal.go.kr/index.jsp)https://www.airportal.go.kr/index.jsp 에서 추가 수집할 데이터 여부 파악
