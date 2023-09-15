@@ -10,4 +10,12 @@
 - 남은 과제
   - google scholar에서 관련 논문 서치
   - [airportal](https://www.airportal.go.kr/index.jsp)https://www.airportal.go.kr/index.jsp 에서 추가 수집할 데이터 여부 파악
-  - 추가적으로 스크래핑 할 사이트 [datago](https://www.data.go.kr) #API 이용 
+  - 추가적으로 스크래핑 할 사이트 [datago](https://www.data.go.kr) #API 이용
+ 
+- 공공데이터 포털 : 한국공항공사_항공기 운항정보 [data_of_airport]('https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000126')
+  - 항공사 코드 전부 추출. (20230915)
+     **해야 할 일**
+       - 국제선 현황
+       - 국내선 현황
+    **사전 주의 사항**
+       - url 별로 돌아다니면서 크롤링을 하려면 상당한 중첩이 생길 것으로 예견.. 복잡하지 않게 코드를 짜는 방안 모색
