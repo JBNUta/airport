@@ -12,7 +12,7 @@
   - [airportal](https://www.airportal.go.kr/index.jsp)https://www.airportal.go.kr/index.jsp 에서 추가 수집할 데이터 여부 파악
   - 추가적으로 스크래핑 할 사이트 [datago](https://www.data.go.kr) #API 이용
  
-- 공공데이터 포털 : 한국공항공사_항공기 운항정보 [data_of_airport]('https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000126')
+- 공공데이터 포털 : 한국공항공사_항공기 운항정보 [airportAPI]('https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15000126')
   - 항공사 코드 전부 추출. (20230915)
   - **해야 할 일**
        - 국제선 현황
