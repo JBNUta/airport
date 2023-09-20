@@ -1,8 +1,6 @@
 - ### air_portal.R
-  - **TO DO**
-      - 변수명 간소화
 - ### schedule.R
-  - 쓸모없음. 폐기
+  - airportal.R과 동일한 결과임. 폐기
 - ### abnormal.R
      - **TO DO**
        - 공항명 추가 + 코드값을 실제 공항명으로 변경 필요
