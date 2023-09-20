@@ -50,21 +50,19 @@ table_element2 <- table_element %>%html_node("table")
 tbody <- table_element2 %>%html_node("tbody")
 tr <- tbody %>%html_nodes("tr")
 
-td_contents_list <- lapply(tr, function(tr_node) {
-    tr_node %>% html_nodes("td") %>% html_text(trim = TRUE)})
+td_list <- lapply(tr, function(tr_node) {tr_node %>% html_nodes("td") %>% html_text(trim = TRUE)})
 
 # 마지막 원소는 총 개수를 나타내는 원소로서 제외해도 무방
-td_contents_list_except_last <- td_contents_list[-length(td_contents_list)]
+td_list <- td_list[-length(td_list)]
 # 홀수번째 원소만. -> 짝수번째 원소는 테이블 구성을 위해 포함된 것으로 아무런 내용이 없음
-odd_td_contents_list <- td_contents_list_except_last[seq(1, length(td_contents_list_except_last), by = 2)]
+td_list <- td_list[seq(1, length(td_list), by = 2)]
 # 리스트의 각 원소에서 홀수번째 자리에만 내용이 들어가 있음
-cleaned_odd_td_contents_list <- lapply(odd_td_contents_list, function(td_contents) {
+td_list <- lapply(td_list, function(td_contents) {
   cleaned_td_contents <- td_contents[c(TRUE, FALSE)]  
   cleaned_td_contents <- cleaned_td_contents[cleaned_td_contents != ""]  
   return(cleaned_td_contents)})
 
-# dataframe으로 저장
-df <- do.call(rbind, lapply(cleaned_odd_td_contents_list, function(row) data.frame(t(row), stringsAsFactors = FALSE)))
+df <- as.data.frame(do.call(rbind, td_list))
 
 # 출도착에 따라 변수명 변경
 if (dep_arr == "A") {colnames(df) <- c("항공사", "편명", "출발지", "계획", "예상", "도착", "구분", "현황")
@@ -80,8 +78,8 @@ write.csv(df, file = csv_file_name, row.names = FALSE)
 return(df)}
 
 dep_arr <- "D"
-date <- "20230906"
-airport <- "김포"
+date <- "20230909"
+airport <- "제주"
 
 df1 <- get_airplane(dep_arr, date, airport)
 
