@@ -1,9 +1,7 @@
 - ### air_portal.R
-- ### schedule.R
-  - airportal.R과 동일한 결과임. 폐기
 - ### abnormal.R
-     - **TO DO**
-       - 공항명 추가 + 코드값을 실제 공항명으로 변경 필요
+- ### schedule.R
+  - airportal.R로 대체 가능 -> 폐기
        
 - ### 남은 과제
   - google scholar에서 관련 논문 서치
