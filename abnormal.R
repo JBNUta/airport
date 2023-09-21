@@ -12,8 +12,6 @@ ap_list <- strsplit(ap_list, ":")
 airport_kor <- sapply(ap_list, "[", 1)
 airport_code <- sapply(ap_list, "[", 2)
 
-
-
 # 함수 정의
 get_airplane_abnormal <- function(dep_arr, date, airport) {
       remote_driver$navigate("https://www.airportal.go.kr/life/airinfo/RbHanFrmMain.jsp")
