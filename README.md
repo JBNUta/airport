@@ -1,7 +1,5 @@
-- ### air_portal.R
-- ### abnormal.R
 - ### schedule.R
-  - airportal.R로 대체 가능 -> 폐기
+  - airportal.R로 대체 가능 -> 추가 수정 불필요
        
 - ### 남은 과제
   - google scholar에서 관련 논문 서치
