@@ -1,6 +1,3 @@
-- ### schedule.R
-  - airportal.R로 대체 가능 -> 추가 수정 불필요
-       
 - ### 남은 과제
   - google scholar에서 관련 논문 서치
   - 추가적으로 스크래핑 할 사이트 [datago](https://www.data.go.kr)
